@@ -17,7 +17,13 @@ namespace FizzBuzz
         {
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(i);
+                bool fizz = i % 3 == 0;
+                if (fizz)
+                    Console.WriteLine("Fizz");
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
         }
     }
