@@ -10,6 +10,15 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            DoFizzBuzz();
+            Console.ReadKey();
+        }
+        public static void DoFizzBuzz()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
