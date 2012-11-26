@@ -9,13 +9,14 @@ namespace FizzBuzz
     class Program
     {
         static void Main(string[] args)
-        {
-            DoFizzBuzz();
+			{
+				var length = 100;
+            DoFizzBuzz(length);
             Console.ReadKey();
         }
-        public static void DoFizzBuzz()
+        public static void DoFizzBuzz(int length)
         {
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= length; i++)
             {
                 bool fizz = i % 3 == 0;
                 bool buzz = i % 5 == 0;
